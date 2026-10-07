@@ -138,6 +138,37 @@ footer .container{display:flex;justify-content:space-between;gap:20px}
   .hero>div>h1{font-size:39px}
   .cta-box h2{font-size:34px}
 }
+
+/* Hero refinement: direct customer-retention proposition + aligned right-side operating lens */
+.hero{
+  grid-template-columns:minmax(0,1.5fr) minmax(320px,.6fr);
+  gap:56px;
+  align-items:start;
+}
+.hero>div>h1{
+  font-size:clamp(34px,4.1vw,60px);
+  line-height:1.04;
+  letter-spacing:-.052em;
+  max-width:1060px;
+}
+.hero-side{
+  margin-top:6px;
+}
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+  .hero>div>h1{
+    font-size:clamp(35px,7vw,56px);
+  }
+  .hero-side{
+    margin-top:0;
+  }
+}
+@media(max-width:560px){
+  .hero>div>h1{font-size:37px}
+}
 </style>
 </head>
 <body>
@@ -151,7 +182,7 @@ footer .container{display:flex;justify-content:space-between;gap:20px}
 <section class="container hero">
 <div>
 <div class="kicker">Customer Success • Account Management • Revenue Operations</div>
-<h1>I lead customer outcomes across industries by connecting customer priorities to business solutions, measurable success criteria, and coordinated execution.</h1>
+<h1>I drive customer retention by translating the customer's own outcomes into technology solutions that result in measurably positive success criteria, leading to highly realized value behind their investments, which subsequently drives expansion and growth.</h1>
 <p>I'm <strong>Amr Elsayed</strong>, a Customer Success & Account Management professional with experience across enterprise customer programs, sales operations, revenue operations, and process improvement. I connect customer needs to the right business solution, define measurable success criteria, and turn operational signals into actionable decisions.</p>
 <div class="actions"><a class="btn primary" href="#work">Explore the proof of work ↓</a><a class="btn" href="https://www.linkedin.com/in/amrhelsayed" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
 </div>
@@ -167,11 +198,7 @@ footer .container{display:flex;justify-content:space-between;gap:20px}
 </div>
 </section>
 
-<section class="container metrics" aria-label="Selected operational scale">
-<div class="metric"><div class="label">Quarterly commercial scope</div><div class="value">Up to $220M</div><div class="note">opportunity pipeline managed / supported</div></div>
-<div class="metric"><div class="label">Quarterly commercial scope</div><div class="value">Up to $79M</div><div class="note">scheduled billings confirmed as landed</div></div>
-<div class="metric"><div class="label">Fiscal-year control scope</div><div class="value">$32.4M</div><div class="note">cross-system billing discrepancies reconciled</div></div>
-</section>
+
 
 
 
