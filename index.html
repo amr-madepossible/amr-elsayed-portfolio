@@ -169,6 +169,48 @@ footer .container{display:flex;justify-content:space-between;gap:20px}
 @media(max-width:560px){
   .hero>div>h1{font-size:37px}
 }
+.hero{
+  grid-template-columns:minmax(0,1.18fr) minmax(360px,.82fr);
+  gap:64px;
+  align-items:stretch;
+}
+.hero>div>h1{
+  font-size:clamp(42px,4.15vw,58px);
+  line-height:1.035;
+  letter-spacing:-.052em;
+  max-width:860px;
+}
+.hero-side{
+  margin-top:0;
+  min-height:100%;
+  padding:30px 34px;
+  border-left:1px solid rgba(255,255,255,.10);
+  background:linear-gradient(180deg,rgba(255,255,255,.032),rgba(255,255,255,.012));
+  border-radius:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.hero-side h3{
+  font-size:clamp(23px,2vw,31px);
+  line-height:1.12;
+  max-width:420px;
+}
+.hero-side p{
+  max-width:420px;
+  font-size:14px;
+  line-height:1.7;
+}
+@media(max-width:1000px){
+  .hero{grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr);gap:42px}
+  .hero>div>h1{font-size:clamp(40px,5vw,54px)}
+}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:36px}
+  .hero>div>h1{font-size:clamp(38px,7vw,54px);max-width:900px}
+  .hero-side{min-height:auto;padding:26px 28px}
+}
+@media(max-width:560px){.hero>div>h1{font-size:37px}}
 </style>
 </head>
 <body>
