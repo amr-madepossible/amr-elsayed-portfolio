@@ -20,7 +20,7 @@ Portfolio artifacts are **reconstructed analytical samples using synthetic data*
 
 The portfolio uses the following primary classifications:
 
-- **CRM:** Microsoft Dynamics 365; HubSpot
+- **CRM:** Microsoft Dynamics 365
 - **ERP:** SAP
 - **ITSM:** ServiceNow
 - **Content & collaboration:** SharePoint; Slack; Google Workspace
