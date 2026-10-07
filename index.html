@@ -211,6 +211,23 @@ footer .container{display:flex;justify-content:space-between;gap:20px}
   .hero-side{min-height:auto;padding:26px 28px}
 }
 @media(max-width:560px){.hero>div>h1{font-size:37px}}
+
+/* Final hero scale refinement */
+.hero>div>h1{
+  font-size:clamp(31px,3.15vw,45px);
+  line-height:1.08;
+  letter-spacing:-.045em;
+  max-width:840px;
+}
+@media(max-width:1000px){
+  .hero>div>h1{font-size:clamp(31px,4.6vw,45px)}
+}
+@media(max-width:900px){
+  .hero>div>h1{font-size:clamp(31px,6.2vw,44px);max-width:900px}
+}
+@media(max-width:560px){
+  .hero>div>h1{font-size:34px}
+}
 </style>
 </head>
 <body>
