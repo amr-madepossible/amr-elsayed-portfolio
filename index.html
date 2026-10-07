@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amr Elsayed | Customer Success & Account Management</title>
+<meta name="description" content="Amr Elsayed portfolio: Customer Success & Account Management, Sales & Revenue Operations, and Process Automation.">
+<meta name="theme-color" content="#0b0d12">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b0d12'/%3E%3Cpath d='M18 45V19h7l7 10 7-10h7v26h-7V30l-7 10-7-10v15z' fill='%23f4f1ea'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0d12;--panel:#11151d;--panel2:#151a23;--ink:#f4f1ea;--muted:#9ea6b6;--line:#252c38;--accent:#b8ff62;--accent2:#75d6ff;--warm:#ffd18a;--max:1180px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 85% 10%,rgba(117,214,255,.08),transparent 28%),radial-gradient(circle at 8% 22%,rgba(184,255,98,.06),transparent 24%),var(--bg);color:var(--ink);font-family:Manrope,Arial,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}
+.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+.nav{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.06)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:"Space Grotesk";font-weight:700;letter-spacing:-.04em}
+.brand span{color:var(--accent)}
+.navlinks{display:flex;gap:26px;font-size:13px;color:var(--muted)}
+.navlinks a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);padding:11px 15px;border-radius:999px;font-size:13px;font-weight:700;transition:.2s}
+.btn:hover{transform:translateY(-1px);border-color:#3c4656}
+.btn.primary{background:var(--accent);color:#0b0d12;border-color:var(--accent)}
+.hero{padding:96px 0 72px;display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:end}
+.kicker{font:500 12px "DM Mono";text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:20px}
+h1{font:700 clamp(56px,8vw,104px)/.92 "Space Grotesk";letter-spacing:-.065em;margin:0 0 24px;max-width:880px}
+.hero p{font-size:19px;color:#c4cad5;max-width:770px;margin:0 0 30px}
+.hero-side{border-left:1px solid var(--line);padding-left:28px}
+.hero-side .mini{font:500 11px "DM Mono";color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+.hero-side h3{font:600 25px/1.2 "Space Grotesk";margin:10px 0 10px}
+.hero-side p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.metric{padding:24px 18px;border-right:1px solid var(--line)}
+.metric:last-child{border-right:0}
+.metric .label{font:500 10px "DM Mono";color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.metric .value{font:700 32px "Space Grotesk";margin:8px 0 3px;letter-spacing:-.04em}
+.metric .note{font-size:11px;color:#737d8e}
+section{padding:92px 0}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}
+.eyebrow{font:500 11px "DM Mono";text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+h2{font:700 clamp(38px,5vw,64px)/.98 "Space Grotesk";letter-spacing:-.05em;margin:7px 0 0}
+.section-copy{max-width:420px;color:var(--muted);font-size:14px}
+.focus{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.focus-card,.work-card,.experience-card,.about-card{background:linear-gradient(180deg,rgba(255,255,255,.028),rgba(255,255,255,.012));border:1px solid var(--line);border-radius:20px}
+.focus-card{padding:26px;min-height:220px}
+.num{font:500 11px "DM Mono";color:var(--accent)}
+.focus-card h3{font:700 25px "Space Grotesk";margin:26px 0 10px}
+.focus-card p{font-size:13px;color:var(--muted);margin:0}
+.focus-card strong{color:var(--ink)}
+.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.work-card{padding:0;overflow:hidden}
+.work-top{padding:24px 24px 18px;display:flex;justify-content:space-between;gap:20px}
+.sample{font:500 10px "DM Mono";padding:7px 8px;border:1px solid rgba(184,255,98,.34);color:var(--accent);border-radius:999px;white-space:nowrap}
+.work-card h3{font:700 27px "Space Grotesk";margin:0 0 8px;letter-spacing:-.03em}
+.work-card p{font-size:13px;color:var(--muted);margin:0}
+.mock{margin:0 18px 18px;border:1px solid #2b3441;border-radius:14px;background:#0c1016;padding:16px;min-height:175px}
+.mockhead{display:flex;justify-content:space-between;align-items:center;font:500 10px "DM Mono";color:#8390a2;text-transform:uppercase}
+.bars{display:flex;align-items:end;height:85px;gap:7px;margin-top:18px}
+.bar{flex:1;background:linear-gradient(180deg,var(--accent2),rgba(117,214,255,.15));border-radius:4px 4px 0 0}
+.row{display:grid;grid-template-columns:1fr 80px 80px;gap:10px;padding:8px 0;border-bottom:1px solid #232a34;font-size:11px}
+.row:last-child{border-bottom:0}
+.pill{display:inline-flex;padding:4px 7px;border-radius:999px;background:#1b222d;color:#b7c0ce;font:500 9px "DM Mono"}
+.health{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+.healthbox{border:1px solid #252e39;border-radius:10px;padding:10px}
+.healthbox .big{font:700 24px "Space Grotesk";margin-top:4px}
+.work-foot{display:flex;justify-content:space-between;align-items:center;padding:0 24px 24px}
+.work-foot .tag{font:500 10px "DM Mono";color:#778193}
+.more{font-size:12px;font-weight:700;color:var(--ink)}
+.experience{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
+.experience-card{padding:28px}
+.role{display:grid;grid-template-columns:145px 1fr;gap:25px;padding:21px 0;border-top:1px solid var(--line)}
+.role:first-child{border-top:0;padding-top:0}
+.date{font:500 10px "DM Mono";color:#7e899a;text-transform:uppercase}
+.role h3{font:700 20px "Space Grotesk";margin:0 0 6px}
+.role p{font-size:12px;color:var(--muted);margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tag{font:500 10px "DM Mono";color:#8c98aa;border:1px solid #2a323e;border-radius:999px;padding:7px 9px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:16px}
+.about-card{padding:28px}
+.about-card h3{font:700 28px "Space Grotesk";margin:0 0 13px}
+.about-card p{font-size:14px;color:var(--muted);margin:0}
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.stack div{padding:11px 12px;border:1px solid var(--line);border-radius:10px;font:500 11px "DM Mono";color:#a5afbd}
+.cta{padding:92px 0 110px}
+.cta-box{border:1px solid #303847;border-radius:26px;padding:46px;background:linear-gradient(135deg,rgba(184,255,98,.08),rgba(117,214,255,.06));display:flex;justify-content:space-between;gap:30px;align-items:end}
+.cta h2{max-width:700px}
+.cta p{color:var(--muted);max-width:600px;margin:15px 0 0}
+footer{border-top:1px solid var(--line);padding:24px 0;color:#6f7a8b;font-size:11px}
+footer .container{display:flex;justify-content:space-between;gap:20px}
+.modal{position:fixed;inset:0;background:rgba(5,7,10,.82);backdrop-filter:blur(12px);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}
+.modal.open{display:flex}
+.modal-card{width:min(760px,100%);max-height:90vh;overflow:auto;background:#10141b;border:1px solid #303847;border-radius:24px;padding:28px}
+.modal-close{float:right;border:0;background:transparent;color:var(--muted);font-size:24px;cursor:pointer}
+.modal h3{font:700 34px "Space Grotesk";margin:8px 0}
+.modal .muted{color:var(--muted);font-size:13px}
+.modal .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}
+.modal .box{border:1px solid var(--line);border-radius:12px;padding:14px}
+@media(max-width:900px){.hero,.experience,.about{grid-template-columns:1fr}.hero{padding-top:70px}.metrics{grid-template-columns:repeat(2,1fr)}.metric:nth-child(2){border-right:0}.focus{grid-template-columns:1fr}.work-grid{grid-template-columns:1fr}.navlinks{display:none}.cta-box,.section-head{display:block}.section-copy{margin-top:14px}.role{grid-template-columns:1fr}.stack{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.container{width:min(calc(100% - 28px),var(--max))}h1{font-size:54px}.metrics{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid var(--line)}.metric:last-child{border-bottom:0}.stack{grid-template-columns:1fr}section{padding:72px 0}.hero-side{border-left:0;border-top:1px solid var(--line);padding:24px 0 0}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="container navin">
+<a class="brand" href="#top">AMR <span>ELSAYED</span></a>
+<nav class="navlinks"><a href="#focus">Focus</a><a href="#work">Proof</a><a href="#experience">Experience</a><a href="#toolkit">Toolkit</a></nav>
+<a class="btn primary" href="mailto:ah.aimed11@gmail.com">Let's talk ↗</a>
+</div></header>
+
+<main id="top">
+<section class="container hero">
+<div>
+<div class="kicker">Customer Success • Account Management • Revenue Operations</div>
+<h1>I turn complex customer and commercial workflows into clearer outcomes.</h1>
+<p>I'm <strong>Amr Elsayed</strong>, a Customer Success & Account Management professional with hands-on experience across enterprise customer programs, sales operations, revenue workflows, and process improvement.</p>
+<div class="actions"><a class="btn primary" href="#work">Explore the proof of work ↓</a><a class="btn" href="https://www.linkedin.com/in/amrhelsayed" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+</div>
+<aside class="hero-side"><div class="mini">Positioning</div><h3>Relationship-led. Commercially aware. Operationally rigorous.</h3><p>I work across customers, sellers, operations, finance, and delivery teams to surface risk, align next actions, and keep work moving.</p></aside>
+</section>
+
+<section class="container metrics" aria-label="Reported experience scale">
+<div class="metric"><div class="label">Reported scale</div><div class="value">Up to $219.7M</div><div class="note">opportunity pipeline / quarter</div></div>
+<div class="metric"><div class="label">Reported scale</div><div class="value">Up to $79.0M</div><div class="note">scheduled billings landed</div></div>
+<div class="metric"><div class="label">Reported scale</div><div class="value">Up to $32.4M</div><div class="note">cross-system discrepancies reconciled</div></div>
+<div class="metric"><div class="label">Reported example</div><div class="value">21 / $12.2M</div><div class="note">completed deals surfaced from open pipeline</div></div>
+</section>
+
+<section id="focus" class="container">
+<div class="section-head"><div><div class="eyebrow">01 / Core focus</div><h2>What I bring first.</h2></div><div class="section-copy">The hierarchy is intentional: customer value and account ownership come first, then the commercial and operational systems that support them.</div></div>
+<div class="focus">
+<article class="focus-card"><div class="num">01</div><h3>Customer Success & Account Management</h3><p>Customer health, success planning, adoption, renewal readiness, stakeholder engagement, escalation ownership, and value realization.</p></article>
+<article class="focus-card"><div class="num">02</div><h3>Sales & Revenue Operations</h3><p>Pipeline governance, forecast hygiene, scheduled billings readiness, reconciliation, order/invoice workflows, and commercial execution.</p></article>
+<article class="focus-card"><div class="num">03</div><h3>Process Automation</h3><p>SOP optimization, reporting, dashboards, no-code tooling, and practical automation that reduces friction and improves visibility.</p></article>
+</div>
+</section>
+
+<section id="work" class="container">
+<div class="section-head"><div><div class="eyebrow">02 / Proof of work</div><h2>Show, don't just tell.</h2></div><div class="section-copy">These are portfolio demonstrations built to make the methods visible. They are reconstructed samples, not confidential company documents.</div></div>
+<div class="work-grid">
+<article class="work-card"><div class="work-top"><div><h3>Customer Success Delivery Review</h3><p>Executive-ready review tying customer objectives to success criteria, adoption, consumption, risk, and next actions.</p></div><div class="sample">ILLUSTRATIVE SAMPLE</div></div><div class="mock"><div class="mockhead"><span>CS Review / Account A</span><span class="pill">HEALTH: AMBER</span></div><div class="health"><div class="healthbox"><span class="mockhead">Adoption</span><div class="big">78%</div></div><div class="healthbox"><span class="mockhead">Renewal risk</span><div class="big">Medium</div></div></div><div class="row"><span>Primary objective</span><span>On track</span><span>Owner</span></div><div class="row"><span>Expansion signal</span><span>Detected</span><span>CSAM</span></div></div><div class="work-foot"><span class="tag">Success planning · Health · QBR</span><button class="btn" onclick="openModal('cs')">View sample ↗</button></div></article>
+
+<article class="work-card"><div class="work-top"><div><h3>Account Insight Brief</h3><p>A compact account intelligence layer for consumption, adoption, support trends, risk signals, and growth opportunities.</p></div><div class="sample">ILLUSTRATIVE SAMPLE</div></div><div class="mock"><div class="mockhead"><span>Account signal summary</span><span class="pill">4 SIGNALS</span></div><div class="row"><span>Workload adoption</span><span>+18%</span><span>Positive</span></div><div class="row"><span>Support incidents</span><span>-11%</span><span>Positive</span></div><div class="row"><span>Unused entitlement</span><span>23%</span><span>Watch</span></div><div class="row"><span>Growth opportunity</span><span>High</span><span>Action</span></div></div><div class="work-foot"><span class="tag">Insights · Risk · Growth</span><button class="btn" onclick="openModal('insight')">View sample ↗</button></div></article>
+
+<article class="work-card"><div class="work-top"><div><h3>Renewal Readiness Scorecard</h3><p>Structured renewal view combining service utilization, engagement, delivery gaps, revenue risk, and expansion signals.</p></div><div class="sample">ILLUSTRATIVE SAMPLE</div></div><div class="mock"><div class="mockhead"><span>Renewal / Q4</span><span class="pill">READY 72%</span></div><div class="bars"><div class="bar" style="height:38%"></div><div class="bar" style="height:56%"></div><div class="bar" style="height:69%"></div><div class="bar" style="height:61%"></div><div class="bar" style="height:82%"></div><div class="bar" style="height:76%"></div><div class="bar" style="height:91%"></div><div class="bar" style="height:84%"></div></div></div><div class="work-foot"><span class="tag">Renewal · Risk · Expansion</span><button class="btn" onclick="openModal('renewal')">View sample ↗</button></div></article>
+
+<article class="work-card"><div class="work-top"><div><h3>Pipeline Operations Dashboard</h3><p>Illustrative control surface for pipeline hygiene, stage movement, ageing, ownership, duplicates, and forecast readiness.</p></div><div class="sample">ILLUSTRATIVE SAMPLE</div></div><div class="mock"><div class="mockhead"><span>Pipeline pulse</span><span class="pill">731 OPPS / SAMPLE</span></div><div class="bars"><div class="bar" style="height:48%"></div><div class="bar" style="height:64%"></div><div class="bar" style="height:55%"></div><div class="bar" style="height:81%"></div><div class="bar" style="height:69%"></div><div class="bar" style="height:92%"></div><div class="bar" style="height:74%"></div><div class="bar" style="height:86%"></div></div></div><div class="work-foot"><span class="tag">Pipeline · Forecast · Hygiene</span><button class="btn" onclick="openModal('pipeline')">View sample ↗</button></div></article>
+
+<article class="work-card"><div class="work-top"><div><h3>Revenue Reconciliation Pack</h3><p>Cross-system reconciliation logic mapping billing records, contracts, landed revenue, and corrective action.</p></div><div class="sample">ILLUSTRATIVE SAMPLE</div></div><div class="mock"><div class="mockhead"><span>Reconciliation queue</span><span class="pill">12 EXCEPTIONS</span></div><div class="row"><span>Segment mismatch</span><span>$1.8M</span><span>Open</span></div><div class="row"><span>Invoice mapping</span><span>$640K</span><span>Review</span></div><div class="row"><span>Contract variance</span><span>$310K</span><span>Resolved</span></div><div class="row"><span>Duplicate record</span><span>$92K</span><span>Resolved</span></div></div><div class="work-foot"><span class="tag">Revenue · ERP · Controls</span><button class="btn" onclick="openModal('revenue')">View sample ↗</button></div></article>
+
+<article class="work-card"><div class="work-top"><div><h3>Escalation Control Tower</h3><p>End-to-end case ownership model for billing, PO, invoice, data, and service exceptions with SLA visibility.</p></div><div class="sample">ILLUSTRATIVE SAMPLE</div></div><div class="mock"><div class="mockhead"><span>Open cases</span><span class="pill">SLA 94%</span></div><div class="row"><span>Billing exception</span><span>4h</span><span>On track</span></div><div class="row"><span>PO readiness</span><span>14h</span><span>At risk</span></div><div class="row"><span>Data correction</span><span>7h</span><span>On track</span></div><div class="row"><span>Invoice issue</span><span>19h</span><span>Escalate</span></div></div><div class="work-foot"><span class="tag">Escalations · SLA · Root cause</span><button class="btn" onclick="openModal('esc')">View sample ↗</button></div></article>
+</div>
+</section>
+
+<section id="experience" class="container">
+<div class="section-head"><div><div class="eyebrow">03 / Experience</div><h2>Where the work comes from.</h2></div><div class="section-copy">Selected experience from Microsoft delivery and travel-tech environments, translated into the capabilities shown above.</div></div>
+<div class="experience">
+<div class="experience-card">
+<div class="role"><div class="date">Aug 2025 — Present</div><div><h3>Senior Sales Operations Specialist</h3><p>Concentrix · Microsoft EMEA Services Sales</p><div class="tags"><span class="tag">Pipeline governance</span><span class="tag">Revenue</span><span class="tag">Escalations</span></div></div></div>
+<div class="role"><div class="date">Jun 2023 — Aug 2025</div><div><h3>Customer Success Partner</h3><p>Concentrix · Microsoft CSAM Delivery Center</p><div class="tags"><span class="tag">Success reviews</span><span class="tag">Customer health</span><span class="tag">Renewals</span></div></div></div>
+<div class="role"><div class="date">Jan 2022 — Jun 2023</div><div><h3>Customer & Partner Success Manager</h3><p>Elves App · VC-backed, AI-assisted concierge startup</p><div class="tags"><span class="tag">Partner health</span><span class="tag">Onboarding</span><span class="tag">Operating model</span></div></div></div>
+</div>
+<div class="experience-card"><div class="eyebrow">Differentiator</div><h3 style="font:700 32px 'Space Grotesk';margin:14px 0">A diagnostic mindset from medicine, applied to business.</h3><p style="color:var(--muted);font-size:14px">MBBCh graduate with a habit of separating symptoms from root causes. That translates naturally into customer health analysis, operational troubleshooting, escalation ownership, and structured problem solving.</p><div class="tags"><span class="tag">Root-cause analysis</span><span class="tag">Structured thinking</span><span class="tag">Stakeholder alignment</span></div></div>
+</div>
+</section>
+
+<section id="toolkit" class="container">
+<div class="section-head"><div><div class="eyebrow">04 / Toolkit</div><h2>Systems I work across.</h2></div><div class="section-copy">Tools listed on my CV and reflected in the workflows represented in this portfolio.</div></div>
+<div class="about">
+<div class="about-card"><h3>CRM & ERP</h3><div class="stack"><div>Dynamics 365</div><div>SAP</div><div>ServiceNow</div><div>SharePoint</div><div>HubSpot</div><div>Retool</div></div></div>
+<div class="about-card"><h3>Reporting & Automation</h3><div class="stack"><div>Excel</div><div>Power BI</div><div>Power Automate</div><div>ClickUp</div><div>Python · basic</div><div>Copilot / ChatGPT</div></div></div>
+</div>
+</section>
+
+<section class="container cta">
+<div class="cta-box"><div><div class="eyebrow">05 / Next conversation</div><h2>Looking for someone who can own the customer, the workflow, and the handoffs between them?</h2><p>That is the intersection I’m strongest in.</p></div><a class="btn primary" href="mailto:ah.aimed11@gmail.com">Contact Amr ↗</a></div>
+</section>
+</main>
+<footer><div class="container"><span>© 2026 Amr Elsayed</span><span>Customer Success & Account Management · Sales & Revenue Operations</span></div></footer>
+
+<div class="modal" id="modal"><div class="modal-card"><button class="modal-close" onclick="closeModal()">×</button><div class="eyebrow" id="mEyebrow">ILLUSTRATIVE SAMPLE</div><h3 id="mTitle"></h3><p class="muted" id="mCopy"></p><div class="grid" id="mGrid"></div></div></div>
+<script>
+const data={
+cs:{title:"Customer Success Delivery Review",copy:"Reconstructed sample of an executive-ready monthly customer review. Synthetic data is used to demonstrate structure, not to represent a real customer file.",items:[["Objective","Increase adoption of priority workloads"],["Health","Amber: adoption improving, renewal watch"],["Evidence","Usage trend +18% month over month"],["Next actions","Enablement session + sponsor checkpoint"]]},
+insight:{title:"Account Insight Brief",copy:"Reconstructed sample combining customer signals into an action-oriented account view.",items:[["Signals","Adoption, support, entitlement, growth"],["Risk","23% unused entitlement"],["Opportunity","High expansion potential"],["Action","Target workload with adoption plan"]]},
+renewal:{title:"Renewal Readiness Scorecard",copy:"Reconstructed sample showing how a renewal can be translated into a readiness model.",items:[["Readiness","72%"],["Risk","Medium"],["Gap","Under-used service components"],["Expansion","Qualified follow-up opportunity"]]},
+pipeline:{title:"Pipeline Operations Dashboard",copy:"Reconstructed sample showing the controls behind opportunity hygiene and forecast readiness.",items:[["Scope","Illustrative 731-opportunity view"],["Control","Closed-but-open detection"],["Control","Duplicate and stage-age checks"],["Action","Owner / next-step queue"]]},
+revenue:{title:"Revenue Reconciliation Pack",copy:"Reconstructed sample showing how billing records, contracts and landed revenue can be compared and routed to resolution.",items:[["Input","Billing + contract + revenue records"],["Exception","Segment / mapping variance"],["Control","Cross-system tie-out"],["Outcome","Owner + corrective action"]]},
+esc:{title:"Escalation Control Tower",copy:"Reconstructed sample for end-to-end operational case ownership with SLA and root-cause visibility.",items:[["Cases","Billing, PO, invoice, data"],["Priority","SLA-driven queue"],["Ownership","Single accountable owner"],["Resolution","Root cause before workaround"]]}
+};
+function openModal(k){const d=data[k];document.getElementById('mTitle').textContent=d.title;document.getElementById('mCopy').textContent=d.copy;document.getElementById('mGrid').innerHTML=d.items.map(x=>'<div class="box"><div class="eyebrow">'+x[0]+'</div><div style="margin-top:7px;font-weight:700">'+x[1]+'</div></div>').join('');document.getElementById('modal').classList.add('open')}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+</script>
+</body></html>
